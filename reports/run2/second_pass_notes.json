@@ -1,0 +1,16 @@
+{
+ "note": "second full model pass; the exit codes are in exit_codes.txt",
+ "unstable_check_on_q_longstate_00": {
+  "check": "state/answer-absent",
+  "target": "claim_false",
+  "readings_across_calls": [
+   0.59,
+   0.59,
+   0.6,
+   0.62
+  ],
+  "trigger": 0.6,
+  "meaning": "two calls read 0.59 (below the trigger, no finding) and two read 0.62 (above it, warning); the tool reports exit 3 and asks again rather than picking",
+  "retries": "3 extra runs of the same file with --all: exit 0, 3, 0"
+ }
+}

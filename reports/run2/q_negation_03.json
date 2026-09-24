@@ -1,0 +1,168 @@
+{
+    "source": "queries/q_negation_03.json",
+    "catalogue": {
+        "version": "1",
+        "fingerprint": "5231d67e7d46",
+        "asked": "e2c57c15a55c",
+        "model": "jev-1.13"
+    },
+    "asked_through": null,
+    "answered_by": [
+        "jev-1.13.0"
+    ],
+    "summary": {
+        "error": 2,
+        "warning": 0,
+        "advice": 3,
+        "calls": 6,
+        "tokens": 7345,
+        "tokens_unreported_for": 0,
+        "accepted": 0,
+        "unstable": 0,
+        "unreachable": 0,
+        "asked": 44,
+        "complete": true,
+        "narrowed": true
+    },
+    "accepted_from": null,
+    "notes": [
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "`state/irrelevant-field` names a field at a time, and this state has none to name.",
+            "checks": 1
+        },
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "`state/irrelevant-field` names a field at a time, and this state has none to name.",
+            "checks": 1
+        }
+    ],
+    "cleared": [],
+    "accepted": [],
+    "unstable": [],
+    "findings": [
+        {
+            "check": "question/arithmetic",
+            "title": "Answering needs arithmetic",
+            "severity": "error",
+            "mode": "model",
+            "action": "remove",
+            "path": "/questions/neg_1/instructions",
+            "message": "Answering this needs counting, adding or comparing numbers.",
+            "hint": "Jev recognises the shape of a count instead of tallying, and the error grows with the size of the thing counted. Comparing a figure with a threshold is not this defect: on decision-v7's policy cases Jev answered 30 of 30 threshold questions correctly. Accept it where the count is small, bounded and visible in one place, such as whether a list has more than one entry, and the answer is a judgement about presence rather than the number itself.",
+            "suggest": "Do the arithmetic in code. Where the thing being counted is something only a reader can spot, ask one question per candidate and add the answers up yourself.",
+            "suggest_kind": "patch",
+            "docs": "https://docs.typesafe.ai/model-jaggedness/jev-1.13#math-and-numbers",
+            "probability": 0.65,
+            "trigger": 0.6,
+            "evidence": "Read: \"Is the value of 9 + 4 different from 13?\"",
+            "patch": {
+                "op": "remove",
+                "path": "/questions/neg_1",
+                "safety": "destructive"
+            },
+            "target": "neg_1",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        },
+        {
+            "check": "noul/no-criteria",
+            "title": "Noul does not say what yes and no mean",
+            "severity": "advice",
+            "mode": "static",
+            "action": "add",
+            "path": "/questions/neg_1/criteria",
+            "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+            "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+            "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+            "suggest_kind": "guidance",
+            "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+            "target": "neg_1",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        },
+        {
+            "check": "question/arithmetic",
+            "title": "Answering needs arithmetic",
+            "severity": "error",
+            "mode": "model",
+            "action": "remove",
+            "path": "/questions/neg_2/instructions",
+            "message": "Answering this needs counting, adding or comparing numbers.",
+            "hint": "Jev recognises the shape of a count instead of tallying, and the error grows with the size of the thing counted. Comparing a figure with a threshold is not this defect: on decision-v7's policy cases Jev answered 30 of 30 threshold questions correctly. Accept it where the count is small, bounded and visible in one place, such as whether a list has more than one entry, and the answer is a judgement about presence rather than the number itself.",
+            "suggest": "Do the arithmetic in code. Where the thing being counted is something only a reader can spot, ask one question per candidate and add the answers up yourself.",
+            "suggest_kind": "patch",
+            "docs": "https://docs.typesafe.ai/model-jaggedness/jev-1.13#math-and-numbers",
+            "probability": 0.69,
+            "trigger": 0.6,
+            "evidence": "Read: \"Is the value of 9 + 4 different from 15?\"",
+            "patch": {
+                "op": "remove",
+                "path": "/questions/neg_2",
+                "safety": "destructive"
+            },
+            "target": "neg_2",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        },
+        {
+            "check": "noul/no-criteria",
+            "title": "Noul does not say what yes and no mean",
+            "severity": "advice",
+            "mode": "static",
+            "action": "add",
+            "path": "/questions/neg_2/criteria",
+            "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+            "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+            "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+            "suggest_kind": "guidance",
+            "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+            "target": "neg_2",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        },
+        {
+            "check": "question/answerable-in-code",
+            "title": "The answer follows from the material by a rule",
+            "severity": "advice",
+            "mode": "model",
+            "action": "remove",
+            "path": "/questions/neg_2/instructions",
+            "message": "Code holding the material could answer this without a model.",
+            "hint": "Measured over 96 answers on generated states, Jev got every one right, so what this costs is not accuracy: it is a call, a round trip and a probability where code gives a fact, paid on every request for as long as the question is in the query. Asked both ways over nineteen questions, a field lookup reads 0.73 and up and a question needing a reading of the material reads 0.42 and down. A date comparison reads 0.64 and an encoded value 0.69, so a question carrying one of those defects can draw this as well as the check written for it. Accept it where the field the rule would read is not reliably there or not reliably shaped, and where the value is stated in prose rather than carried in a field, because then code has to read the material before it can apply any rule.",
+            "suggest": "Take the question out and apply the rule in code to the field it reads.",
+            "suggest_kind": "patch",
+            "docs": "https://docs.typesafe.ai/primitives#define-a-question",
+            "probability": 0.765,
+            "trigger": 0.7,
+            "spread": 0.11,
+            "evidence": "Read: \"Is the value of 9 + 4 different from 15?\"",
+            "readings": [
+                0.82,
+                0.71
+            ],
+            "readings_of": "2 wordings",
+            "patch": {
+                "op": "remove",
+                "path": "/questions/neg_2",
+                "safety": "destructive",
+                "covered_by": "question/arithmetic"
+            },
+            "target": "neg_2",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        }
+    ]
+}

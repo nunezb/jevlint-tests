@@ -1,0 +1,16 @@
+queries_single/q_bayes_claims_00.json · 5 repeats · 6 calls, 2,441 tokens
+
+claim  noul, probability of yes
+    unchanged            0.940 ± 0.0000 over the repeats, below the published floor
+    asked-as-choice      0.890  -0.050  6 × the noise floor
+
+claim2  noul, probability of yes
+    unchanged            0.958 ± 0.0045 over the repeats, below the published floor
+  * asked-as-choice      0.900  -0.058  7 × the noise floor, moved
+
+What each rewrite changes:
+  unchanged            sent as written, several times, to measure the spread everything else is compared with
+  asked-as-choice      the same yes/no question asked as a two-option Choice
+
+1 of 2 questions moved on a rewrite. The rewrite that moved: `asked-as-choice`.
+A row is starred when it moved: the change cleared both three times the noise floor and 0.05. The floor is the spread measured over the repeats, or 0.0085 where that spread is smaller, which is the floor this tool uses. Repeats sent back to back understate real variability, so the floor is a floor.

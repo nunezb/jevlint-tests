@@ -1,0 +1,78 @@
+{
+    "source": "queries/q_clean_00.json",
+    "catalogue": {
+        "version": "1",
+        "fingerprint": "5231d67e7d46",
+        "asked": "e2c57c15a55c",
+        "model": "jev-1.13"
+    },
+    "asked_through": null,
+    "answered_by": [
+        "jev-1.13.0"
+    ],
+    "summary": {
+        "error": 0,
+        "warning": 1,
+        "advice": 0,
+        "calls": 3,
+        "tokens": 4786,
+        "tokens_unreported_for": 0,
+        "accepted": 0,
+        "unstable": 0,
+        "unreachable": 0,
+        "asked": 37,
+        "complete": true,
+        "narrowed": true
+    },
+    "accepted_from": null,
+    "notes": [
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "`state/irrelevant-field` names a field at a time, and this state has none to name.",
+            "checks": 1
+        },
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "The checks that compare questions need two to compare. This run carried 1, so they did not run.",
+            "checks": 1
+        }
+    ],
+    "cleared": [],
+    "accepted": [],
+    "unstable": [],
+    "findings": [
+        {
+            "check": "choice/no-fallback",
+            "title": "Choice has no fallback option",
+            "severity": "warning",
+            "mode": "static",
+            "action": "add",
+            "path": "/questions/answer/criteria",
+            "message": "None of the options is an `other` or `none of the above`.",
+            "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+            "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+            "suggest_kind": "patch",
+            "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+            "evidence": "Options: A, B, C, D.",
+            "patch": {
+                "op": "add",
+                "path": "/questions/answer/criteria",
+                "safety": "lossy",
+                "value": {
+                    "A": "Deviations from pertinent controls do not affect the risk of material misstatement in the accounting records.",
+                    "B": "Deviations from pertinent controls at a given rate ordinarily result in misstatements at a lower rate.",
+                    "C": "When the degree of assurance desired in a sample is high the auditor should allow for a high level of sampling risk.",
+                    "D": "Increasing the number of items selected for the test of controls usually increases the tolerable rate of deviations.",
+                    "other": "Anything the other options do not cover"
+                }
+            },
+            "target": "answer",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        }
+    ]
+}

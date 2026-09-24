@@ -1,0 +1,13 @@
+{
+ "state": "Compute 6/10 + 4/7.",
+ "questions": {
+  "neg_1": {
+   "type": "noul",
+   "instructions": "Is the value of 6/10 + 4/7 different from 41/35?"
+  },
+  "neg_2": {
+   "type": "noul",
+   "instructions": "Is the value of 6/10 + 4/7 different from 83/70?"
+  }
+ }
+}

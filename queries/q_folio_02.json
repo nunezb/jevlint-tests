@@ -1,0 +1,14 @@
+{
+ "state": "Premises:\n1. Pasifika New Zealanders are a pan-ethnic group of New Zealanders.\n2. Asian New Zealanders are a pan-ethnic group of New Zealanders.\n3. Pasifika New Zealanders are not Asian New Zealanders.\n4. Pasifika New Zealanders speak Samoan.\n5. Joe is a Pasifika New Zealander.\n6. Amy speaks Samoan.\n\nConclusion: Joe speaks Samoan.",
+ "questions": {
+  "entailment": {
+   "type": "choice",
+   "instructions": "Does the conclusion logically follow from the premises?",
+   "criteria": {
+    "True": "The conclusion follows from the premises",
+    "False": "The premises contradict the conclusion",
+    "Unknown": "The premises neither entail nor contradict the conclusion"
+   }
+  }
+ }
+}

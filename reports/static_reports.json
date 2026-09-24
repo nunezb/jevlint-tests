@@ -1,0 +1,1925 @@
+[
+ {
+  "source": "queries_single/q_bayes_claims_00.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 14,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim2/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim2",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_bayes_claims_00.json"
+ },
+ {
+  "source": "queries_single/q_bayes_claims_01.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 14,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim2/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim2",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_bayes_claims_01.json"
+ },
+ {
+  "source": "queries_single/q_bayes_claims_02.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 14,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim2/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim2",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_bayes_claims_02.json"
+ },
+ {
+  "source": "queries_single/q_bayes_claims_03.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 14,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim2/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim2",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_bayes_claims_03.json"
+ },
+ {
+  "source": "queries_single/q_bayes_claims_04.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 14,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim2/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim2",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_bayes_claims_04.json"
+ },
+ {
+  "source": "queries_single/q_clean_00.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 1,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/answer/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: A, B, C, D.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/answer/criteria",
+     "safety": "lossy",
+     "value": {
+      "A": "Deviations from pertinent controls do not affect the risk of material misstatement in the accounting records.",
+      "B": "Deviations from pertinent controls at a given rate ordinarily result in misstatements at a lower rate.",
+      "C": "When the degree of assurance desired in a sample is high the auditor should allow for a high level of sampling risk.",
+      "D": "Increasing the number of items selected for the test of controls usually increases the tolerable rate of deviations.",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "answer",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_clean_00.json"
+ },
+ {
+  "source": "queries_single/q_clean_01.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 1,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/answer/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: A, B, C, D.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/answer/criteria",
+     "safety": "lossy",
+     "value": {
+      "A": "win, because his deed antedated the woman's deed.",
+      "B": "win, because no encumbrances were mentioned in his deed.",
+      "C": "lose, because the woman has an easement by necessity.",
+      "D": "lose, because the woman has an express easement.",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "answer",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_clean_01.json"
+ },
+ {
+  "source": "queries_single/q_clean_02.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 1,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/answer/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: A, B, C, D.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/answer/criteria",
+     "safety": "lossy",
+     "value": {
+      "A": "agreements made between individuals.",
+      "B": "pleasure and the absence of pain.",
+      "C": "facts about human nature.",
+      "D": "virtue.",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "answer",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_clean_02.json"
+ },
+ {
+  "source": "queries_single/q_clean_03.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 1,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/answer/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: A, B, C, D.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/answer/criteria",
+     "safety": "lossy",
+     "value": {
+      "A": "Introversion",
+      "B": "Neuroticism",
+      "C": "Rigidity",
+      "D": "Mid-life crisis",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "answer",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_clean_03.json"
+ },
+ {
+  "source": "queries_single/q_clean_04.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 1,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/answer/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: A, B, C, D.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/answer/criteria",
+     "safety": "lossy",
+     "value": {
+      "A": "An electric field will be induced within the conducting sphere.",
+      "B": "The conducting sphere will develop a net electric charge of \u2013Q.",
+      "C": "The spheres will experience an electrostatic attraction.",
+      "D": "The spheres will experience an electrostatic repulsion.",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "answer",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_clean_04.json"
+ },
+ {
+  "source": "queries_single/q_clean_05.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 1,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/answer/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: A, B, C, D.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/answer/criteria",
+     "safety": "lossy",
+     "value": {
+      "A": "ethically acceptable since it serves the best interests of his clients.",
+      "B": "explicitly recommended in the ethical guidelines.",
+      "C": "ethically unacceptable since it treats clients inequitably.",
+      "D": "explicitly prohibited in the ethical guidelines.",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "answer",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_clean_05.json"
+ },
+ {
+  "source": "queries_single/q_folio_00.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [],
+  "file": "queries_single/q_folio_00.json"
+ },
+ {
+  "source": "queries_single/q_folio_01.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [],
+  "file": "queries_single/q_folio_01.json"
+ },
+ {
+  "source": "queries_single/q_folio_02.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [],
+  "file": "queries_single/q_folio_02.json"
+ },
+ {
+  "source": "queries_single/q_folio_03.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 20,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [],
+  "file": "queries_single/q_folio_03.json"
+ },
+ {
+  "source": "queries_single/q_longstate_00.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 1,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 22,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim_true/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim_true",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim_false/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim_false",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/value/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: 0.067, 0.093, 0.113, 0.141.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/value/criteria",
+     "safety": "lossy",
+     "value": {
+      "0.067": "An ECE of 0.067",
+      "0.093": "An ECE of 0.093",
+      "0.113": "An ECE of 0.113",
+      "0.141": "An ECE of 0.141",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "value",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_longstate_00.json"
+ },
+ {
+  "source": "queries_single/q_longstate_01.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 2,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 22,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim_true/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim_true",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim_false/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim_false",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/value/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: 0.067, 0.093, 0.113, 0.141.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/value/criteria",
+     "safety": "lossy",
+     "value": {
+      "0.067": "An ECE of 0.067",
+      "0.093": "An ECE of 0.093",
+      "0.113": "An ECE of 0.113",
+      "0.141": "An ECE of 0.141",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "value",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "state/oversized",
+    "title": "State is large",
+    "severity": "warning",
+    "mode": "static",
+    "action": "remove",
+    "path": "/state",
+    "message": "The state is large enough that unrelated detail is likely to be costing accuracy.",
+    "hint": "Retrieve and filter in code first, and send only the fields the questions need. This rule counts characters, which is a proxy for tokens, not a measurement of them.",
+    "suggest": "Build the state from the fields the questions read, and leave the rest out.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/model-jaggedness/jev-1.13#large-state-full-of-irrelevant-detail",
+    "evidence": "90,798 characters, against a 20,000 character threshold.",
+    "target": "state",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_longstate_01.json"
+ },
+ {
+  "source": "queries_single/q_longstate_02.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 2,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 22,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim_true/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim_true",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/claim_false/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "claim_false",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/value/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: 0.067, 0.093, 0.113, 0.141.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/value/criteria",
+     "safety": "lossy",
+     "value": {
+      "0.067": "An ECE of 0.067",
+      "0.093": "An ECE of 0.093",
+      "0.113": "An ECE of 0.113",
+      "0.141": "An ECE of 0.141",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "value",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "state/oversized",
+    "title": "State is large",
+    "severity": "warning",
+    "mode": "static",
+    "action": "remove",
+    "path": "/state",
+    "message": "The state is large enough that unrelated detail is likely to be costing accuracy.",
+    "hint": "Retrieve and filter in code first, and send only the fields the questions need. This rule counts characters, which is a proxy for tokens, not a measurement of them.",
+    "suggest": "Build the state from the fields the questions read, and leave the rest out.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/model-jaggedness/jev-1.13#large-state-full-of-irrelevant-detail",
+    "evidence": "90,798 characters, against a 20,000 character threshold.",
+    "target": "state",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_longstate_02.json"
+ },
+ {
+  "source": "queries_single/q_negation_00.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 14,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/neg_1/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "neg_1",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/neg_2/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "neg_2",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_negation_00.json"
+ },
+ {
+  "source": "queries_single/q_negation_01.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 14,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/neg_1/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "neg_1",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/neg_2/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "neg_2",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_negation_01.json"
+ },
+ {
+  "source": "queries_single/q_negation_02.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 14,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/neg_1/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "neg_1",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/neg_2/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "neg_2",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_negation_02.json"
+ },
+ {
+  "source": "queries_single/q_negation_03.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 2,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 14,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/neg_1/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "neg_1",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/neg_2/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "neg_2",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_negation_03.json"
+ },
+ {
+  "source": "queries_single/q_origin_overlap_00.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 1,
+   "advice": 4,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 22,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/machine_like/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "machine_like",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/origin_ai/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "origin_ai",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/slop_bare/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "slop_bare",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "noul/no-criteria",
+    "title": "Noul does not say what yes and no mean",
+    "severity": "advice",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/slop_def/criteria",
+    "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+    "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+    "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+    "suggest_kind": "guidance",
+    "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+    "target": "slop_def",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   },
+   {
+    "check": "choice/no-fallback",
+    "title": "Choice has no fallback option",
+    "severity": "warning",
+    "mode": "static",
+    "action": "add",
+    "path": "/questions/origin_choice/criteria",
+    "message": "None of the options is an `other` or `none of the above`.",
+    "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+    "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+    "suggest_kind": "patch",
+    "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+    "evidence": "Options: human, ai, edited.",
+    "patch": {
+     "op": "add",
+     "path": "/questions/origin_choice/criteria",
+     "safety": "lossy",
+     "value": {
+      "human": "Written by a human",
+      "ai": "Generated by an AI system",
+      "edited": "Written by a human, then substantially edited by an AI system",
+      "other": "Anything the other options do not cover"
+     }
+    },
+    "target": "origin_choice",
+    "measure": "probability",
+    "near_trigger": false,
+    "unstable": false,
+    "fired": true
+   }
+  ],
+  "file": "queries_single/q_origin_overlap_00.json"
+ },
+ {
+  "source": "queries_single/q_rubric_00.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 18,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [],
+  "file": "queries_single/q_rubric_00.json"
+ },
+ {
+  "source": "queries_single/q_rubric_01.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 18,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [],
+  "file": "queries_single/q_rubric_01.json"
+ },
+ {
+  "source": "queries_single/q_rubric_02.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 18,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [],
+  "file": "queries_single/q_rubric_02.json"
+ },
+ {
+  "source": "queries_single/q_rubric_03.json",
+  "catalogue": {
+   "version": "1",
+   "fingerprint": "5231d67e7d46",
+   "asked": "e2c57c15a55c",
+   "model": "jev-1.13"
+  },
+  "asked_through": null,
+  "answered_by": [],
+  "summary": {
+   "error": 0,
+   "warning": 0,
+   "advice": 0,
+   "calls": 0,
+   "tokens": 0,
+   "tokens_unreported_for": 0,
+   "accepted": 0,
+   "unstable": 0,
+   "unreachable": 0,
+   "asked": 18,
+   "complete": true,
+   "narrowed": true
+  },
+  "accepted_from": null,
+  "notes": [
+   {
+    "kind": "skipped",
+    "target": null,
+    "message": "Jev was not asked, so the 24 checks that ask it were not run.",
+    "checks": 24
+   }
+  ],
+  "cleared": [],
+  "accepted": [],
+  "unstable": [],
+  "findings": [],
+  "file": "queries_single/q_rubric_03.json"
+ }
+]

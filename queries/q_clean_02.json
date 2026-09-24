@@ -1,0 +1,15 @@
+{
+ "state": " According to Aquinas's moral theory, morality is ultimately grounded in",
+ "questions": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which option is the correct answer to the question above?",
+   "criteria": {
+    "A": "agreements made between individuals.",
+    "B": "pleasure and the absence of pain.",
+    "C": "facts about human nature.",
+    "D": "virtue."
+   }
+  }
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "tool": "jevlint 1.2.0",
+ "catalogue": "v1 5231d67e7d46 for jev-1.13",
+ "date": "2026-09-23",
+ "queries": 27,
+ "model_calls": 143,
+ "static": {
+  "findings": 40,
+  "errors": 0,
+  "warnings": 12,
+  "advice": 28
+ },
+ "model": {
+  "calls": 143,
+  "severity": {
+   "advice": 54,
+   "warning": 23,
+   "error": 16
+  },
+  "by_check": {
+   "noul/no-criteria": 28,
+   "question/type-mismatch": 19,
+   "query/overlapping-questions": 7,
+   "choice/no-fallback": 10,
+   "question/refers-to-sibling": 5,
+   "choice/undetermined-outcome": 2,
+   "state/answer-absent": 2,
+   "question/unsettled-case": 2,
+   "state/oversized": 2,
+   "question/arithmetic": 7,
+   "question/answerable-in-code": 2,
+   "question/compound-judgment": 4,
+   "question/undefined-boundary": 3
+  }
+ }
+}

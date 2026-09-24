@@ -1,0 +1,15 @@
+{
+ "state": "Fear of aging has been associated with high levels of",
+ "questions": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which option is the correct answer to the question above?",
+   "criteria": {
+    "A": "Introversion",
+    "B": "Neuroticism",
+    "C": "Rigidity",
+    "D": "Mid-life crisis"
+   }
+  }
+ }
+}

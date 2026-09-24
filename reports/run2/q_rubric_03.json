@@ -1,0 +1,68 @@
+{
+    "source": "queries/q_rubric_03.json",
+    "catalogue": {
+        "version": "1",
+        "fingerprint": "5231d67e7d46",
+        "asked": "e2c57c15a55c",
+        "model": "jev-1.13"
+    },
+    "asked_through": null,
+    "answered_by": [
+        "jev-1.13.0"
+    ],
+    "summary": {
+        "error": 0,
+        "warning": 0,
+        "advice": 0,
+        "calls": 3,
+        "tokens": 5160,
+        "tokens_unreported_for": 0,
+        "accepted": 0,
+        "unstable": 0,
+        "unreachable": 0,
+        "asked": 36,
+        "complete": true,
+        "narrowed": true
+    },
+    "accepted_from": null,
+    "notes": [
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "`state/irrelevant-field` names a field at a time, and this state has none to name.",
+            "checks": 1
+        },
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "The checks that compare questions need two to compare. This run carried 1, so they did not run.",
+            "checks": 1
+        }
+    ],
+    "cleared": [
+        {
+            "check": "question/compound-judgment",
+            "path": "/questions/quality/instructions",
+            "probability": 0.61,
+            "trigger": 0.7,
+            "target": "quality",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": false
+        },
+        {
+            "check": "score/multi-dimension",
+            "path": "/questions/quality/criteria",
+            "probability": 0.64,
+            "trigger": 0.77,
+            "advice_caveat": "Blind testing found two-axis rubrics reading 0.72 to 0.80 and published-correct rubrics reading 0.62 to 0.76, so the two overlap and no trigger separates them. At 0.77 this fires on none of the published-correct material and on fewer than half the two-axis rubrics: a clear reading is not evidence the scale measures one quality.",
+            "target": "quality",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": false
+        }
+    ],
+    "accepted": [],
+    "unstable": [],
+    "findings": []
+}

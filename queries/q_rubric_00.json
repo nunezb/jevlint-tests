@@ -1,0 +1,15 @@
+{
+ "state": "A student submitted the following solution.\n\nProposed solution, step by step:\n1. Start from 3(x \u2212 4) + 7 = 16.\n2. Subtract 7 from both sides: 3(x \u2212 4) = 9.\n3. Divide both sides by 3: x \u2212 4 = 3.\n4. Add 4 to both sides: x = 7.\n5. Check: 3(7 \u2212 4) + 7 = 16. The solution is correct.",
+ "questions": {
+  "quality": {
+   "type": "score",
+   "instructions": "Rate the mathematical correctness of the proposed solution.",
+   "criteria": [
+    "Fundamentally incorrect: wrong method or multiple serious errors",
+    "A major error invalidates the final result, though the overall method is appropriate",
+    "Substantially correct with at most a minor numerical slip in the final answer",
+    "Fully correct"
+   ]
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "state": "Dr. Marcos Manzetti uses a \u201csliding scale\u201d that is based on a client\u2019s current income to set his fees for therapy. Dr. Manzetti\u2019s practice is:",
+ "questions": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which option is the correct answer to the question above?",
+   "criteria": {
+    "A": "ethically acceptable since it serves the best interests of his clients.",
+    "B": "explicitly recommended in the ethical guidelines.",
+    "C": "ethically unacceptable since it treats clients inequitably.",
+    "D": "explicitly prohibited in the ethical guidelines."
+   }
+  }
+ }
+}

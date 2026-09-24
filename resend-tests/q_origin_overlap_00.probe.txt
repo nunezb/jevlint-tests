@@ -1,0 +1,31 @@
+queries_single/q_origin_overlap_00.json · 5 repeats · 7 calls, 5,358 tokens
+
+machine_like  noul, probability of yes
+    unchanged            0.394 ± 0.0134 over the repeats
+    near enough to the middle that your threshold decides this question and not the query
+  * asked-as-choice      0.250  -0.144  11 × the noise floor, moved
+
+origin_ai  noul, probability of yes
+    unchanged            0.508 ± 0.0130 over the repeats
+    near enough to the middle that your threshold decides this question and not the query, and the repeats fell on both sides of it
+  * asked-as-choice      0.450  -0.058  4 × the noise floor, moved
+
+slop_bare  noul, probability of yes
+    unchanged            0.190 ± 0.0000 over the repeats, below the published floor
+  * asked-as-choice      0.040  -0.150  18 × the noise floor, moved
+
+slop_def  noul, probability of yes
+    unchanged            0.182 ± 0.0045 over the repeats, below the published floor
+  * asked-as-choice      0.050  -0.132  16 × the noise floor, moved
+
+origin_choice  choice, probability of `human`
+    unchanged            0.868 ± 0.0084 over the repeats, below the published floor
+    options-reversed     0.870  +0.002  0 × the noise floor
+
+What each rewrite changes:
+  unchanged            sent as written, several times, to measure the spread everything else is compared with
+  asked-as-choice      the same yes/no question asked as a two-option Choice
+  options-reversed     the same options in the opposite order
+
+4 of 5 questions moved on a rewrite. 2 questions answered near the middle as written. The rewrite that moved: `asked-as-choice`.
+A row is starred when it moved: the change cleared both three times the noise floor and 0.05. The floor is the spread measured over the repeats, or 0.0085 where that spread is smaller, which is the floor this tool uses. Repeats sent back to back understate real variability, so the floor is a floor.

@@ -1,0 +1,14 @@
+{
+ "state": "Premises:\n1. On December 1, 30 days remain until the end of the year in the Gregorian calendar.\n2. December 1, 1970, was a Tuesday.\n3. December 1, 2021, was a Wednesday.\n4. Today is Thursday.\n\nConclusion: Today is December 1.",
+ "questions": {
+  "entailment": {
+   "type": "choice",
+   "instructions": "Does the conclusion logically follow from the premises?",
+   "criteria": {
+    "True": "The conclusion follows from the premises",
+    "False": "The premises contradict the conclusion",
+    "Unknown": "The premises neither entail nor contradict the conclusion"
+   }
+  }
+ }
+}

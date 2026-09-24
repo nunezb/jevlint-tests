@@ -1,0 +1,72 @@
+queries_single/q_bayes_claims_01.json · 5 repeats · 6 calls, 2,441 tokens
+
+claim  noul, probability of yes
+    unchanged            0.938 ± 0.0084 over the repeats, below the published floor
+    asked-as-choice      0.900  -0.038  4 × the noise floor
+
+claim2  noul, probability of yes
+    unchanged            0.810 ± 0.0187 over the repeats
+  * asked-as-choice      0.590  -0.220  12 × the noise floor, moved
+
+What each rewrite changes:
+  unchanged            sent as written, several times, to measure the spread everything else is compared with
+  asked-as-choice      the same yes/no question asked as a two-option Choice
+
+1 of 2 questions moved on a rewrite. The rewrite that moved: `asked-as-choice`.
+A row is starred when it moved: the change cleared both three times the noise floor and 0.05. The floor is the spread measured over the repeats, or 0.0085 where that spread is smaller, which is the floor this tool uses. Repeats sent back to back understate real variability, so the floor is a floor.
+exit=0
+
+queries_single/q_bayes_claims_02.json · 5 repeats · 6 calls, 2,447 tokens
+
+claim  noul, probability of yes
+    unchanged            0.880 ± 0.0071 over the repeats, below the published floor
+  * asked-as-choice      0.780  -0.100  12 × the noise floor, moved
+
+claim2  noul, probability of yes
+    unchanged            0.770 ± 0.0245 over the repeats
+    asked-as-choice      0.770  +0.000  0 × the noise floor
+
+What each rewrite changes:
+  unchanged            sent as written, several times, to measure the spread everything else is compared with
+  asked-as-choice      the same yes/no question asked as a two-option Choice
+
+1 of 2 questions moved on a rewrite. The rewrite that moved: `asked-as-choice`.
+A row is starred when it moved: the change cleared both three times the noise floor and 0.05. The floor is the spread measured over the repeats, or 0.0085 where that spread is smaller, which is the floor this tool uses. Repeats sent back to back understate real variability, so the floor is a floor.
+exit=0
+
+queries_single/q_bayes_claims_03.json · 5 repeats · 6 calls, 2,441 tokens
+
+claim  noul, probability of yes
+    unchanged            0.792 ± 0.0084 over the repeats, below the published floor
+    asked-as-choice      0.770  -0.022  3 × the noise floor
+
+claim2  noul, probability of yes
+    unchanged            0.802 ± 0.0130 over the repeats
+    asked-as-choice      0.850  +0.048  4 × the noise floor
+
+What each rewrite changes:
+  unchanged            sent as written, several times, to measure the spread everything else is compared with
+  asked-as-choice      the same yes/no question asked as a two-option Choice
+
+0 of 2 questions moved on a rewrite.
+A row is starred when it moved: the change cleared both three times the noise floor and 0.05. The floor is the spread measured over the repeats, or 0.0085 where that spread is smaller, which is the floor this tool uses. Repeats sent back to back understate real variability, so the floor is a floor.
+exit=0
+
+queries_single/q_bayes_claims_04.json · 5 repeats · 6 calls, 2,465 tokens
+
+claim  noul, probability of yes
+    unchanged            0.916 ± 0.0152 over the repeats
+  * asked-as-choice      0.840  -0.076  5 × the noise floor, moved
+
+claim2  noul, probability of yes
+    unchanged            0.620 ± 0.0292 over the repeats
+    near enough to the middle that your threshold decides this question and not the query
+    asked-as-choice      0.690  +0.070  2 × the noise floor
+
+What each rewrite changes:
+  unchanged            sent as written, several times, to measure the spread everything else is compared with
+  asked-as-choice      the same yes/no question asked as a two-option Choice
+
+1 of 2 questions moved on a rewrite. 1 question answered near the middle as written. The rewrite that moved: `asked-as-choice`.
+A row is starred when it moved: the change cleared both three times the noise floor and 0.05. The floor is the spread measured over the repeats, or 0.0085 where that spread is smaller, which is the floor this tool uses. Repeats sent back to back understate real variability, so the floor is a floor.
+exit=0

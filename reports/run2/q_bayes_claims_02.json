@@ -1,0 +1,150 @@
+{
+    "source": "queries/q_bayes_claims_02.json",
+    "catalogue": {
+        "version": "1",
+        "fingerprint": "5231d67e7d46",
+        "asked": "e2c57c15a55c",
+        "model": "jev-1.13"
+    },
+    "asked_through": null,
+    "answered_by": [
+        "jev-1.13.0"
+    ],
+    "summary": {
+        "error": 0,
+        "warning": 1,
+        "advice": 4,
+        "calls": 6,
+        "tokens": 7480,
+        "tokens_unreported_for": 0,
+        "accepted": 0,
+        "unstable": 0,
+        "unreachable": 0,
+        "asked": 44,
+        "complete": true,
+        "narrowed": true
+    },
+    "accepted_from": null,
+    "notes": [
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "`state/irrelevant-field` names a field at a time, and this state has none to name.",
+            "checks": 1
+        },
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "`state/irrelevant-field` names a field at a time, and this state has none to name.",
+            "checks": 1
+        }
+    ],
+    "cleared": [],
+    "accepted": [],
+    "unstable": [],
+    "findings": [
+        {
+            "check": "noul/no-criteria",
+            "title": "Noul does not say what yes and no mean",
+            "severity": "advice",
+            "mode": "static",
+            "action": "add",
+            "path": "/questions/claim/criteria",
+            "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+            "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+            "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+            "suggest_kind": "guidance",
+            "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+            "target": "claim",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        },
+        {
+            "check": "question/type-mismatch",
+            "title": "Another primitive fits these answers better",
+            "severity": "advice",
+            "mode": "model",
+            "action": "retype",
+            "path": "/questions/claim",
+            "message": "The answer this asks for is not a noul, a choice or a score, but it is declared a `noul`.",
+            "hint": "Where two types both fit, prefer the one your code can act on directly. A Noul at 0.5 means yes and no are equally likely, not that the answer is in the middle. Accept it where the primitive is chosen for the caller rather than the question: a Noul whose probability you threshold, where a Choice would give you a label you would only threshold anyway.",
+            "suggest": "Change `type` to the primitive named, and reshape `criteria` to match it: a map of label to description for a Choice, an ordered list of described levels for a Score, a `true` and `false` pair for a Noul. Where no primitive is named, the answer is a value to be read out of the material rather than a judgement about it, so take the question out and read the value in code.",
+            "suggest_kind": "guidance",
+            "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+            "weight": 0.92,
+            "trigger": 0.7,
+            "evidence": "`other` 0.89 against the declared `noul` 0.08.",
+            "target": "claim",
+            "measure": "weight",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        },
+        {
+            "check": "query/overlapping-questions",
+            "title": "Two questions ask for the same judgement: `claim` and `claim2`",
+            "severity": "warning",
+            "mode": "model",
+            "action": "restructure",
+            "path": "/questions/claim2",
+            "message": "Two questions in this query ask for the same judgement in different words.",
+            "hint": "Both answers cost a question and move together, so the second buys nothing, and where they disagree the disagreement is noise rather than information. Accept it where the two questions are asked of different parts of the state, so the same words are a different question each time.",
+            "suggest": "Keep the one whose answer your code acts on and drop the other. Where the two are meant to differ, make the difference explicit in both.",
+            "suggest_kind": "guidance",
+            "docs": "https://docs.typesafe.ai/primitives#ask-multiple-questions-together",
+            "probability": 0.63,
+            "trigger": 0.6,
+            "evidence": "Both ask: \"Given a positive test result, the probab … 6/25 (approximately 0.640).\" / \"Given a positive test result, the probab … 8/25 (approximately 0.320).\"",
+            "paths": [
+                "/questions/claim",
+                "/questions/claim2"
+            ],
+            "target": "claim2",
+            "measure": "probability",
+            "near_trigger": true,
+            "unstable": false,
+            "fired": true
+        },
+        {
+            "check": "noul/no-criteria",
+            "title": "Noul does not say what yes and no mean",
+            "severity": "advice",
+            "mode": "static",
+            "action": "add",
+            "path": "/questions/claim2/criteria",
+            "message": "The question carries no criteria, so where the line between yes and no falls is left to the model.",
+            "hint": "The instruction is enough for many Nouls. Where the boundary is subtle, saying what a yes and a no mean is what moves a question from guessing to deciding.",
+            "suggest": "Add a `criteria` object with a `true` and a `false` description, saying which material counts as each.",
+            "suggest_kind": "guidance",
+            "docs": "https://docs.typesafe.ai/primitives/noul#writing-a-noul-question",
+            "target": "claim2",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        },
+        {
+            "check": "question/type-mismatch",
+            "title": "Another primitive fits these answers better",
+            "severity": "advice",
+            "mode": "model",
+            "action": "retype",
+            "path": "/questions/claim2",
+            "message": "The answer this asks for is not a noul, a choice or a score, but it is declared a `noul`.",
+            "hint": "Where two types both fit, prefer the one your code can act on directly. A Noul at 0.5 means yes and no are equally likely, not that the answer is in the middle. Accept it where the primitive is chosen for the caller rather than the question: a Noul whose probability you threshold, where a Choice would give you a label you would only threshold anyway.",
+            "suggest": "Change `type` to the primitive named, and reshape `criteria` to match it: a map of label to description for a Choice, an ordered list of described levels for a Score, a `true` and `false` pair for a Noul. Where no primitive is named, the answer is a value to be read out of the material rather than a judgement about it, so take the question out and read the value in code.",
+            "suggest_kind": "guidance",
+            "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+            "weight": 0.9,
+            "trigger": 0.7,
+            "evidence": "`other` 0.87 against the declared `noul` 0.10.",
+            "target": "claim2",
+            "measure": "weight",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        }
+    ]
+}

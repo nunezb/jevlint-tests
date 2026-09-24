@@ -1,0 +1,141 @@
+{
+    "source": "queries/q_clean_05.json",
+    "catalogue": {
+        "version": "1",
+        "fingerprint": "5231d67e7d46",
+        "asked": "e2c57c15a55c",
+        "model": "jev-1.13"
+    },
+    "asked_through": null,
+    "answered_by": [
+        "jev-1.13.0"
+    ],
+    "summary": {
+        "error": 1,
+        "warning": 1,
+        "advice": 0,
+        "calls": 5,
+        "tokens": 5971,
+        "tokens_unreported_for": 0,
+        "accepted": 0,
+        "unstable": 0,
+        "unreachable": 0,
+        "asked": 37,
+        "complete": true,
+        "narrowed": true
+    },
+    "accepted_from": null,
+    "notes": [
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "`state/irrelevant-field` names a field at a time, and this state has none to name.",
+            "checks": 1
+        },
+        {
+            "kind": "skipped",
+            "target": null,
+            "message": "The checks that compare questions need two to compare. This run carried 1, so they did not run.",
+            "checks": 1
+        }
+    ],
+    "cleared": [
+        {
+            "check": "choice/overlapping-options",
+            "path": "/questions/answer/criteria",
+            "probability": 0.695,
+            "trigger": 0.7,
+            "readings": [
+                0.69,
+                0.69,
+                0.71,
+                0.69
+            ],
+            "target": "answer",
+            "near_trigger": true,
+            "unstable": false,
+            "fired": false
+        },
+        {
+            "check": "question/unsettled-case",
+            "path": "/questions/answer",
+            "probability": 0.38,
+            "trigger": 0.45,
+            "advice_caveat": "Read this one before acting on it. The rewrite it asks for is measured on one question; how often it points at a query that is already fine is not.",
+            "target": "answer",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": false
+        },
+        {
+            "check": "choice/undetermined-outcome",
+            "path": "/questions/answer",
+            "probability": 0.69,
+            "trigger": 0.7,
+            "readings": [
+                0.68,
+                0.7
+            ],
+            "target": "answer",
+            "near_trigger": true,
+            "unstable": false,
+            "fired": false
+        }
+    ],
+    "accepted": [],
+    "unstable": [],
+    "findings": [
+        {
+            "check": "question/refers-to-sibling",
+            "title": "Question depends on another question's answer",
+            "severity": "error",
+            "mode": "model",
+            "action": "restructure",
+            "path": "/questions/answer/instructions",
+            "message": "This question is written to use something another question in the same request produces.",
+            "hint": "Questions in one request are independent, so what this names is not there to be read and the question is answered as though the material were absent. Measured on decision-v7's contrastive rows: with the policy the question needs moved out of the state and into another question's instructions, the label is answered 20 of 30 against 27 of 30 with it in the state, at a Brier score of 0.237 against 0.064. Deleting the policy outright reads 20 of 30 and 0.242, so a sibling carries nothing. Accept it where the phrase points at the material rather than at an answer the request has to produce.",
+            "suggest": "Put what the question needs into the state. Where the second question cannot be built until the first is answered, send it as a second request.",
+            "suggest_kind": "guidance",
+            "docs": "https://docs.typesafe.ai/primitives#when-one-question-depends-on-another",
+            "probability": 0.78,
+            "trigger": 0.6,
+            "evidence": "Read: \"Which option is the correct answer to the question above?\"",
+            "target": "answer",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        },
+        {
+            "check": "choice/no-fallback",
+            "title": "Choice has no fallback option",
+            "severity": "warning",
+            "mode": "static",
+            "action": "add",
+            "path": "/questions/answer/criteria",
+            "message": "None of the options is an `other` or `none of the above`.",
+            "hint": "Without a catch-all the probability mass has nowhere to go, so it lands on the nearest wrong label. Measured on decision-v7: where the answer was none of the options, removing the catch-all put a mean 0.79 on a label that could not be right and cost a Brier score of 0.660 against 0.349 with it. Where the answer was among the options it cost nothing.",
+            "suggest": "Add `\"other\": \"Anything the other options do not cover\"`.",
+            "suggest_kind": "patch",
+            "docs": "https://docs.typesafe.ai/primitives#choose-a-question-type",
+            "evidence": "Options: A, B, C, D.",
+            "patch": {
+                "op": "add",
+                "path": "/questions/answer/criteria",
+                "safety": "lossy",
+                "value": {
+                    "A": "ethically acceptable since it serves the best interests of his clients.",
+                    "B": "explicitly recommended in the ethical guidelines.",
+                    "C": "ethically unacceptable since it treats clients inequitably.",
+                    "D": "explicitly prohibited in the ethical guidelines.",
+                    "other": "Anything the other options do not cover"
+                }
+            },
+            "target": "answer",
+            "measure": "probability",
+            "near_trigger": false,
+            "unstable": false,
+            "fired": true
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+ "state": "Compute 9 + 4.",
+ "questions": {
+  "neg_1": {
+   "type": "noul",
+   "instructions": "Is the value of 9 + 4 different from 13?"
+  },
+  "neg_2": {
+   "type": "noul",
+   "instructions": "Is the value of 9 + 4 different from 15?"
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "state": "In assessing the tolerable rate of deviations of a test of controls that was performed using statistical sampling an auditor should consider that",
+ "questions": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which option is the correct answer to the question above?",
+   "criteria": {
+    "A": "Deviations from pertinent controls do not affect the risk of material misstatement in the accounting records.",
+    "B": "Deviations from pertinent controls at a given rate ordinarily result in misstatements at a lower rate.",
+    "C": "When the degree of assurance desired in a sample is high the auditor should allow for a high level of sampling risk.",
+    "D": "Increasing the number of items selected for the test of controls usually increases the tolerable rate of deviations."
+   }
+  }
+ }
+}

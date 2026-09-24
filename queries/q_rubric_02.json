@@ -1,0 +1,15 @@
+{
+ "state": "A student submitted the following solution.\n\nProposed solution, step by step:\n1. Write the numerator as a difference of squares: x^2 \u2212 121 = (x \u2212 11)(x + 11).\n2. The expression becomes (x \u2212 11)(x + 11) / (x \u2212 11).\n3. Cancel the common factor (x \u2212 11): the result is x + 11, valid for x \u2260 11.",
+ "questions": {
+  "quality": {
+   "type": "score",
+   "instructions": "Rate the mathematical correctness of the proposed solution.",
+   "criteria": [
+    "Fundamentally incorrect: wrong method or multiple serious errors",
+    "A major error invalidates the final result, though the overall method is appropriate",
+    "Substantially correct with at most a minor numerical slip in the final answer",
+    "Fully correct"
+   ]
+  }
+ }
+}

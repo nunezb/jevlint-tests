@@ -1,0 +1,15 @@
+{
+ "state": "A student submitted the following solution.\n\nProposed solution, step by step:\n1. Write f(x) = x^3(5x + 8).\n2. With u = x^3 and v = 5x + 8: u' = 3x^2, v' = 5.\n3. Product rule: f'(x) = u'v + uv' = 3x^2(5x + 8) + 5x^3.\n4. Expand: f'(x) = 20x^3 + 24x^2.",
+ "questions": {
+  "quality": {
+   "type": "score",
+   "instructions": "Rate the mathematical correctness of the proposed solution.",
+   "criteria": [
+    "Fundamentally incorrect: wrong method or multiple serious errors",
+    "A major error invalidates the final result, though the overall method is appropriate",
+    "Substantially correct with at most a minor numerical slip in the final answer",
+    "Fully correct"
+   ]
+  }
+ }
+}

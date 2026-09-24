@@ -1,0 +1,13 @@
+{
+ "state": "Compute 3 + 2.",
+ "questions": {
+  "neg_1": {
+   "type": "noul",
+   "instructions": "Is the value of 3 + 2 different from 5?"
+  },
+  "neg_2": {
+   "type": "noul",
+   "instructions": "Is the value of 3 + 2 different from 6?"
+  }
+ }
+}

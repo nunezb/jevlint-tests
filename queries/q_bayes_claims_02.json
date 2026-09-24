@@ -1,0 +1,13 @@
+{
+ "state": "A disease has prevalence 1/10. A test has sensitivity 4/5 and specificity 19/20.",
+ "questions": {
+  "claim": {
+   "type": "noul",
+   "instructions": "Given a positive test result, the probability of disease is 16/25 (approximately 0.640)."
+  },
+  "claim2": {
+   "type": "noul",
+   "instructions": "Given a positive test result, the probability of disease is 8/25 (approximately 0.320)."
+  }
+ }
+}

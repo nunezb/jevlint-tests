@@ -1,0 +1,13 @@
+{
+ "state": "Compute 234 \u00d7 842.",
+ "questions": {
+  "neg_1": {
+   "type": "noul",
+   "instructions": "Is the value of 234 \u00d7 842 different from 197028?"
+  },
+  "neg_2": {
+   "type": "noul",
+   "instructions": "Is the value of 234 \u00d7 842 different from 197128?"
+  }
+ }
+}

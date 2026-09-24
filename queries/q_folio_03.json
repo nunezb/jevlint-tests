@@ -1,0 +1,14 @@
+{
+ "state": "Premises:\n1. There are some student-athletes who play Division 1 football at Yale who don't exercise every day.\n2. All student-athletes who play Division 1 football at Yale are enrolled at the university.\n3. All student-athletes who are enrolled at Yale University have a GPA above 1.0.\n4. All student-athletes who have a GPA above 1.0 are allowed to take seminar courses.\n5. James is a student-athlete who is not allowed to take seminar courses.\n\nConclusion: If James does not exercise every day and plays Division 1 football at Yale, then he plays Division 1 football at Yale.",
+ "questions": {
+  "entailment": {
+   "type": "choice",
+   "instructions": "Does the conclusion logically follow from the premises?",
+   "criteria": {
+    "True": "The conclusion follows from the premises",
+    "False": "The premises contradict the conclusion",
+    "Unknown": "The premises neither entail nor contradict the conclusion"
+   }
+  }
+ }
+}
